@@ -9,10 +9,10 @@ public class Inicia {
 	    Double precoGasolina = 4.90d;
 	    Double kmViagem = 250d;
 	    
-	    Double custoViagemGol = (kmViagem / kmPorLitroGol) * precoGasolina;
-		System.out.println(nomeCarroGol+": "+custoViagemGol);
+	    Double custoViagemGol = (kmViagem / gol.kmPorLitro) * precoGasolina;
+		System.out.println(gol.nome+": "+custoViagemGol);
 		
-		Double custoViagemCelta = (kmViagem / kmPorLitroCelta) * precoGasolina;
-		System.out.println(nomeCarroCelta+": "+custoViagemCelta);
+		Double custoViagemCelta = (kmViagem / celta.kmPorLitro) * precoGasolina;
+		System.out.println(celta.nome+": "+custoViagemCelta);
 	}
 }

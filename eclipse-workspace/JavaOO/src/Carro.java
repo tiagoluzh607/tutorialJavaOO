@@ -1,7 +1,7 @@
 
 public class Carro {
-	  String nome;
-	  Double kmPorLitro;
+	  public String nome;
+	  public Double kmPorLitro;
 
 	  public Carro(String nome, Double kmPorLitro) {
 	    this.nome = nome;
