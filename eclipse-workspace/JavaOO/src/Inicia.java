@@ -2,11 +2,8 @@
 public class Inicia {
 	public static void main(String[] args) {
 		
-		String nomeCarroGol = "GOL 2010 1.0";
-		Double kmPorLitroGol = 10.8d;
-		
-		String nomeCarroCelta = "Celta 2010 1.0";
-	    Double kmPorLitroCelta = 13.8d;
+	    Carro gol = new Carro("GOL 2010 1.0",10.8d);
+	    Carro celta = new Carro("Celta 2010 1.0",13.8d);
 	    
 	    //conta
 	    Double precoGasolina = 4.90d;
