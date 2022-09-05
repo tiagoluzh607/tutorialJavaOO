@@ -1,5 +1,5 @@
 
-public class Veiculo {
+public abstract class Veiculo {
 
 	public String nome;
 	public Double kmPorLitro;
@@ -13,9 +13,7 @@ public class Veiculo {
 		return nome;
 	}
 
-	public Double getKmPorLitro() {
-		return kmPorLitro * 2;
-	}
+	public abstract Double getKmPorLitro();
 
 	public void setKmPorLitro(Double kmPorLitro) {
 		this.kmPorLitro = kmPorLitro;
