@@ -9,6 +9,9 @@ public class Inicia {
 	    //Onibus
 	    MicroOnibus mercedes = new MicroOnibus("Jinbei Topic 2010", 5.7d);
 	    
+	    //aviao
+	    Aviao aviao = new Aviao();
+	    
 	    //conta
 	    Double custoViagemGol = new Viagem(250d, gol).custoDaViagem(10d);
 		System.out.println(gol.getNome()+": "+custoViagemGol);
@@ -18,5 +21,8 @@ public class Inicia {
 		
 		Double custoViagemMicroOnibus = new Viagem(250d, mercedes).custoDaViagem();
 		System.out.println(mercedes.getNome()+": "+custoViagemMicroOnibus);
+		
+		Double custoViagemAviao = new Viagem(250d, aviao).custoDaViagem();
+		System.out.println("aviao: "+custoViagemAviao);
 	}
 }

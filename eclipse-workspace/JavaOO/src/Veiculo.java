@@ -1,5 +1,5 @@
 
-public abstract class Veiculo {
+public abstract class Veiculo implements IViagemCalculavel {
 
 	public String nome;
 	public Double kmPorLitro;
