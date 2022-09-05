@@ -23,4 +23,8 @@ public class Viagem {
 		Double precoViagem = (this.km / this.carro.getKmPorLitro()) * this.precoGasolina;
 		return precoViagem;
 	}
+	
+	public Double custoDaViagem(Double valorDesconto) {
+		return this.custoDaViagem() - valorDesconto;
+	}
 }
