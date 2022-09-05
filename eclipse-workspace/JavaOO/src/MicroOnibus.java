@@ -1,22 +1,8 @@
 
-public class MicroOnibus {
-	public String nome;
-	public Double kmPorLitro;
+public class MicroOnibus extends Veiculo {
 
 	public MicroOnibus(String nome, Double kmPorLitro) {
-		this.nome = nome;
-		this.kmPorLitro = kmPorLitro;
+		super(nome,kmPorLitro);
 	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public Double getKmPorLitro() {
-		return kmPorLitro * 2;
-	}
-
-	public void setKmPorLitro(Double kmPorLitro) {
-		this.kmPorLitro = kmPorLitro;
-	}
+	
 }

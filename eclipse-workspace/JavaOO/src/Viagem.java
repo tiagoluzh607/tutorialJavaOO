@@ -3,24 +3,24 @@ public class Viagem {
 	private final Double precoGasolina = 4.90d;
 
 	private Double km;
-	private Carro carro;
+	private Veiculo veiculo;
 
-	public Viagem(Double km, Carro carro) {
+	public Viagem(Double km, Veiculo veiculo) {
 		super();
 		this.km = km;
-		this.carro = carro;
+		this.veiculo = veiculo;
 	}
 
 	public Double getKm() {
 		return km;
 	}
 
-	public Carro getCarro() {
-		return carro;
+	public Veiculo getVeiculo() {
+		return veiculo;
 	}
 
 	public Double custoDaViagem() {
-		Double precoViagem = (this.km / this.carro.getKmPorLitro()) * this.precoGasolina;
+		Double precoViagem = (this.km / this.veiculo.getKmPorLitro()) * this.precoGasolina;
 		return precoViagem;
 	}
 	
